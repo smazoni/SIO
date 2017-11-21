@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first web app</title>
+  <title>My first SIO</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
   <style type="text/css">
   h1 {
     text-align: center;
-    color: #c61f57;
+    color: #ffffff;
     font-size: 60px;
-    background-color: rgba(237, 161, 220, 0.3);
+    background-color: rgba(66, 134, 244, 0.6);
     padding: 5px;
   }
   body {background-color: #5342f4;
@@ -54,19 +54,19 @@
       </ul>
     </div>
   </nav>
-  <h1>Sistema Informativo Ospedaliero</h1>
+  <h1>SIO</h1>
   <form class="container" id="needs-validation" novalidate>
     <div class="row">
       <div class="col-md-4 mb-3">
-       <label for="validationCustom01">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" minlength="2" required>
+       <label for="validationCustom01">Nome</label>
+       <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" minlength="2" required>
         <div class="invalid-feedback">
           Inserisci un nome valido.
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <label for="validationCustom02">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" minlength="2" required>
+        <label for="validationCustom02">Cognome</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Cognome" minlength="2" required>
         <div class="invalid-feedback">
           Inserisci un cognome valido.
         </div>
@@ -81,14 +81,14 @@
       </div>
     <div class="row">
       <div class="col-md-4 mb-3">
-        <label for="validationCustom03">CITTA'</label>
+        <label for="validationCustom03">Citta'</label>
          <input type="text" class="form-control" id="validationCustom03" placeholder="Inserisci una citta' valida" required>
           <div class="invalid-feedback">
             Inserisci una citta' valida.
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="validationCustom04">STATO</label>
+          <label for="validationCustom04">Stato</label>
            <input type="text" class="form-control" id="validationCustom04" placeholder="Inserisci uno stato valido." required>
             <div class="invalid-feedback">
              Inserisci uno stato valido.
@@ -96,7 +96,7 @@
         </div>
         <div class="col-md-4 mb-3">
          <label for="validationCustom05">CAP</label>
-          <input type="number" min="09009" max="09100" class="form-control" id="validationCustom05" placeholder="Inserisci un CAP valido" required>
+          <input type="number" min="00010" max="07100" class="form-control" id="validationCustom05" placeholder="Inserisci un CAP valido" required>
           <div class="invalid-feedback">
             Inserisci un CAP valido.
           </div>
@@ -105,17 +105,21 @@
     <div class="row">
       <div class="col-md-4 mb-3">
         <div class="form-group">
-          <label for="exampleFormControlSelect1">CODICE STATO DIMISSIONE</label>
+          <label for="exampleFormControlSelect1">SDO</label>
           <select class="form-control" id="exampleFormControlSelect1">
-            <option>dimesso a domicilio</option>
-            <option>trasferito ad altro ospedale</option>
-            <option>dimesso contro il parere dei sanitari</option>
             <option>deceduto</option>
+            <option>ordinaria a domicilio</option>
+            <option>protetta c/o strutture extraospedaliere</option>
+            <option>volontaria</option>
+            <option>trasferimento ad istituto per acuti</option>
+            <option>trasferimento ad altro regime di ricovero</option>
+            <option>trasferimento ad istituto riabilitazione</option>
+            <option>protetta a dimissione A.D.I</option> 
+            <option> Episodio di allontanamento</option>
+            <option> Deceduto per suicidio avvenuto in ospedale</option>
           </select>
         </div>
       </div>
-      <div class="invalid-feedback">
-        Inserisci un csd valido.
       </div>
     </div>
   </div>
